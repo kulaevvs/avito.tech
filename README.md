@@ -133,6 +133,10 @@ def test_post_announce():
     assert response.status_code == 200
     json_response = response.json()
     assert "id" in json_response
+
+json_response = {'status': 'Сохранили объявление - 040bcfb9-5162-4611-b29d-61127fb32fa6'}
+response   = <Response [200]>
+url        = 'https://qa-internship.avito.com/api/1/item'
 ```
 
 #### Тестовое получение объявления
@@ -147,4 +151,9 @@ def test_get_announce_by_id(create_announce):
     json_response = get_response.json()
     assert json_response['name' == 'Nokia']
     assert json_response['price' == 12500]
+
+E       assert 200 == 400
+E        +  where 200 = <Response [200]>.status_code
+response   = <Response [200]>
+url        = 'https://qa-internship.avito.com/api/1/item'
 ```
