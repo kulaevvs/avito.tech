@@ -122,3 +122,29 @@ test_error_payload = {
 
 ### Примеры выполнения тестов API
 
+#### Тестовое создание объявления
+
+```
+# Выполняем тест на создание объявления
+def test_post_announce():
+    """Тест на создание объявления"""
+    url = f"{test_base_URL}/item"
+    response = requests.post(url, json=test_payload, timeout=5)
+    assert response.status_code == 200
+    json_response = response.json()
+    assert "id" in json_response
+```
+
+#### Тестовое получение объявления
+
+```
+# Выполняем тест на получение объявления по его ID
+def test_get_announce_by_id(create_announce):
+    """Тест на получение объявления по ID"""
+    get_url = f"{test_base_URL}/item/{create_announce}"
+    get_response = requests.get(get_url, timeout=5)
+    assert get_response.status_code == 200
+    json_response = get_response.json()
+    assert json_response['name' == 'Nokia']
+    assert json_response['price' == 12500]
+```
