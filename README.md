@@ -89,25 +89,26 @@
 
 `test_error_ID = "09209618-5494-488e-89f3-966366b361a7_35"`
 
-`test_payload = {`
-`    "name": "Nokia",`
-`    "price": 12500,`
-`    "sellerId": test_seller_ID,`
-`    "statistics": {`
-`        "contacts": 25,`
-`        "likes": 15,`
-`        "viewCount": 17`
-`    }`
-`}`
-`test_error_payload = {`
-`    "name": "Nokia",`
-`    "sellerId": test_seller_ID,`
-`    "statistics": {`
-`        "contacts": 25,`
-`        "likes": 15,`
-`        "viewCount": 17` 
-`    }`
-`}`
+`test_payload = {
+    "name": "Nokia",
+    "price": 12500,
+    "sellerId": test_seller_ID,
+    "statistics": {
+        "contacts": 25,
+        "likes": 15,
+        "viewCount": 17
+    }
+}`
+
+`test_error_payload = {
+    "name": "Nokia",
+    "sellerId": test_seller_ID,
+    "statistics": {
+        "contacts": 25,
+        "likes": 15,
+        "viewCount": 17
+    }
+}`
 
 Пояснения по используемым переменным:
 - test_base_URL - базовый URL API,
