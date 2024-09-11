@@ -84,8 +84,11 @@
 В процессе выполнения тестирования API, для корректной работы тестов, задаются следующие переменные:
 
 `test_base_URL = "https://qa-internship.avito.com/api/1"`
+
 `test_seller_ID = 987531`
+
 `test_error_ID = "09209618-5494-488e-89f3-966366b361a7_35"`
+
 `test_payload = {`
 `    "name": "Nokia",`
 `    "price": 12500,`
