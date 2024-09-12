@@ -14,9 +14,9 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4 align="center">TC-001</td>
-            <td rowspan=2 align="center">R2 Text A</td>
-            <td align="center">R3 Text A</td>
+            <td rowspan=3 align="center">TC-001</td>
+            <td rowspan=3 align="center">Создание объявления (test_post_announce)</td>
+            <td rowspan=3 align="center">Работающий API, валидный 'sellerId'</td>
         </tr>
         <tr>
             <td align="center">R3 Text B</td>
