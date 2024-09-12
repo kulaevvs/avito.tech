@@ -1,13 +1,10 @@
 ## Таблица с описанием багов на странице Avito, с результатами поиска автомобиля BMW X6 в Санкт-Петербурге
 
 ### Таблица содержит следующие колонки:
-- Test Case ID
-- Описание тест-кейса
-- Тестовые данные
-- Шаги воспроизведения
-- Ожидаемый результат
+- Приоритет бага (high, medium, low)
+- Описание бага
 - Фактический результат
-- Статус прохождения
+- Ожидаемый результат
 
 <table>
     <thead>
@@ -16,38 +13,14 @@
             <th>Описание бага</th>
             <th>Фактический результат</th>
             <th>Ожидаемый результат</th>
-            <th>Ожидаемый результат</th>
-            <th>Фактический результат</th>
-            <th>Статус прохождения</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3 align="center">TC-001</td>
-            <td rowspan=3 align="center">Создание объявления (test_post_announce)</td>
-            <td rowspan=3 align="center">Работающий API, валидный "sellerId"</td>
-            <td align="left">1. Отправить POST-запрос на эндпоинт "/item" с телом запроса в формате JSON:
-		
-```
-{
-"name": "Nokia",
- "price": 12500,
- "sellerId": "test_seller_ID",
-	"statistics": {
- 	"contacts": 25,
- 	"like": 15, 
- 	"viewCount": 17
- 	}    
-} 
-```
-</td> 
-<td rowspan=3 align="left">
-	        <ul type="disc">
-		    <li>Статус ответа: 200 OK</li>
-		    <li>В теле ответа присутствует строка: "Сохранили объявление - ID", где ID это уникальный идентификатор объявления.</li>
-	        </ul> 
-	    </td>
- 	    <td rowspan=3 align="left">Сервер возвращает статус `200`, в ответе присутствует сообщение с ID объявления.</td>
+            <td align="center">TC-001</td>
+            <td align="center">Создание объявления (test_post_announce)</td>
+            <td align="center">Работающий API, валидный "sellerId"</td>
+	    <td rowspan=3 align="left">Сервер возвращает статус `200`, в ответе присутствует сообщение с ID объявления.</td>
   	    <td rowspan=3 align="center">FAILED</td>
  	</tr>
         <tr>
