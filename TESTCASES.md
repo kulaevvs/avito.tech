@@ -110,5 +110,22 @@
 	    <td rowspan=2 align="center">Check</td>
 	</tr>
 	    <td align="left">2. Проверить статус ответа.</td>
+            <td rowspan=3 align="center">TC-005</td>
+            <td rowspan=3 align="center">Получение объявления с  несуществующим ID (test_get_announce_error_id)</td>
+            <td rowspan=3 align="center">Работающий API, ID товара несуществующий</td>
+	    <td align="left">1. Отправить GET-запрос на эндпоинт "/item/test_error_ID" с несуществующим ID объявления.</td>
+	    <td rowspan=3 align="left">
+	    	<ul type="disc">
+		    <li>Статус ответа: 404 Not Found.</li>
+		    <li>В теле ответа содержится объект с сообщением об ошибке (например, `"item not found"`).</li>
+	    	</ul>
+	    </td>
+	    <td rowspan=3 align="left">Сервер корректно возвращает статус 404 с соответствующим сообщением.</td>
+	    <td rowspan=3 align="center">Check</td>
+	</tr>
+	    <td align="left">2. Проверить статус ответа.</td>
+	<tr>
+	    <td align="left">3. Убедиться, что в теле ответа содержится сообщение об ошибке.</td>
+	</tr>
     </tbody>
 </table>
