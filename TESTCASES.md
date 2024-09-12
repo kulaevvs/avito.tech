@@ -27,8 +27,8 @@
 	 	"like": 15, 
 	 	"viewCount": 17
 	 	}    
-	} 
-	</td>
+	}
+ </td>
  
 <td align="left">
 	    <ul type="disc">
