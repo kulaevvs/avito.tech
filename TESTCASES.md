@@ -48,7 +48,7 @@
 	        </ul> 
 	    </td>
  	    <td rowspan=3 align="left">Сервер возвращает статус `200`, в ответе присутствует сообщение с ID объявления.</td>
-  	    <td rowspan=3 align="center">Check</td>
+  	    <td rowspan=3 align="center">FAILED</td>
  	</tr>
         <tr>
             <td align="left">2. Проверить статус ответа.</td>
@@ -68,7 +68,7 @@
 	    	</ul>
 	    </td>
 	    <td rowspan=3 align="left">Если объявление существует, сервер возвращает данные по объявлению.</td>
-	    <td rowspan=3 align="center">Check</td>
+	    <td rowspan=3 align="center">PASSED</td>
 	</tr>
 	    <td align="left">2. Проверить статус ответа.</td>
 	<tr>
@@ -86,7 +86,7 @@
 	    	</ul>
 	    </td>
 	    <td rowspan=3 align="left">Запрос возвращает все объявления продавца корректно.</td>
-	    <td rowspan=3 align="center">Check</td>
+	    <td rowspan=3 align="center">PASSED</td>
 	</tr>
  	<tr>
 	    <td align="left">2. Проверить статус ответа.</td>
@@ -118,7 +118,7 @@
 	    	</ul>
 	    </td>
 	    <td rowspan=2 align="left">Сервер корректно возвращает статус 404 с соответствующим сообщением.</td>
-	    <td rowspan=2 align="center">Check</td>
+	    <td rowspan=2 align="center">FAILED</td>
 	</tr>
  	<tr>
 	    <td align="left">2. Проверить статус ответа.</td>
@@ -134,7 +134,7 @@
 	    	</ul>
 	    </td>
 	    <td rowspan=3 align="left">Сервер корректно возвращает статус 404 с соответствующим сообщением.</td>
-	    <td rowspan=3 align="center">Check</td>
+	    <td rowspan=3 align="center">PASSED</td>
 	</tr>
 	    <td align="left">2. Проверить статус ответа.</td>
 	<tr>
