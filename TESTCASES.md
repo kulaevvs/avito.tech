@@ -14,7 +14,7 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4 align="center">R1 Text</td>
+            <td rowspan=4 align="center">TC-001</td>
             <td rowspan=2 align="center">R2 Text A</td>
             <td align="center">R3 Text A</td>
         </tr>
