@@ -31,14 +31,8 @@
 	    <td rowspan=3 align="center">test_api.py::test_post_announce</td>
 	    <td rowspan=3 align="center">Отсутствует поле 'id' в ответе на создание объявления</td>
             <td align="left">1. Отправить POST-запрос на создание объявления по URL "https://qa-internship.avito.com/api/item".</td> 
-	    <td rowspan=3 align="left">
-	        <ul type="disc">
-		    <li>Статус ответа: 200 OK</li>
-		    <li>В теле ответа присутствует строка: "Сохранили объявление - ID", где ID это уникальный идентификатор объявления</li>
-	        </ul> 
-	    </td>
- 	    <td rowspan=3 align="left">Сервер возвращает статус 200 OK, в ответе присутствует сообщение с ID объявления</td>
-  	    <td rowspan=3 align="center">FAILED</td>
+	    <td rowspan=3 align="left">В ответе присутствует сообщение о сохранении объявления, но отсутствует 'id'</td>
+ 	    <td rowspan=3 align="left">В теле ответа присутствует уникальный 'id' созданного объявления</td>
  	</tr>
         <tr>
             <td align="left">2. В теле запроса передать валидные данные в формате JSON:
@@ -58,7 +52,7 @@
 </td> 
 </tr>
 	<tr>
-            <td align="left">3. Извлечь ID созданного объявления из ответа.</td>
+            <td align="left">3. Получить ответ от сервера.</td>
         </tr>
         <tr>
             <td rowspan=3 align="center">TC-002</td>
