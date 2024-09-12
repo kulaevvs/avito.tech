@@ -47,8 +47,7 @@
             <td align="left">3. Извлечь ID созданного объявления из ответа.</td>
         </tr>
         <tr>
-            <td rowspan=2 align="center">R2 Text B</td>
-            <td align="center">R3 Text C</td>
+            <td align="center">A</td>
         </tr>
         <tr>
             <td align="center">R3 Text D</td>
