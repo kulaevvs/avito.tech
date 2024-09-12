@@ -29,11 +29,11 @@
 	 	}    
 	} 
 </td>
-	<td align="left">2. Проверить статус ответа.</td>
- 	<td align="left">3. Извлечь ID созданного объявления из ответа.</td>
+	<td align="left">Статус ответа: `200 OK`</td>
+ 	<td align="left">Сервер возвращает статус `200`, в ответе присутствует сообщение с ID объявления.</td>
  	</tr>
         <tr>
-            <td align="center">R3 Text B</td>
+            <td align="center">2. Проверить статус ответа.</td>
         </tr>
         <tr>
             <td rowspan=2 align="center">R2 Text B</td>
