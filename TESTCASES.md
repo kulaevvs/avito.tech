@@ -54,7 +54,7 @@
 	    <td rowspan=3 align="left">
 	    	<ul type="disc">
 		    <li>Статус ответа: 200 OK</li>
-		    <li>В теле ответа содержится список объявлений данного продавца.</li>
+		    <li>В теле ответа содержится объект с полями 'name', 'price', 'sellerId', 'statistics' и т.д.</li>
 	    	</ul>
 	    </td>
 	    <td rowspan=3 align="left">Если объявление существует, сервер возвращает данные по объявлению.</td>
@@ -64,6 +64,23 @@
 	<tr>
 	    <td align="left">3. Убедиться, что в теле ответа содержится корректная информация о созданном объявлении.</td>
 	</tr>
+         <tr>
+            <td rowspan=3 align="center">TC-003</td>
+            <td rowspan=3 align="center">Получение всех объявлений, связанных с ID продавца (test_get_all_announce_by_seller)</td>
+            <td rowspan=3 align="center">Существуют объявления, созданные одним продавцом.</td>
+	    <td align="left">1. Отправить GET-запрос на эндпоинт "/api/1/sellerID/item".</td>
+	    <td rowspan=3 align="left">
+	    	<ul type="disc">
+		    <li>Статус ответа: 200 OK</li>
+		    <li>В теле ответа содержится список объявлений данного продавца.</li>
+	    	</ul>
+	    </td>
+	    <td rowspan=3 align="left">Запрос возвращает все объявления продавца корректно.</td>
+	    <td rowspan=3 align="center">Check</td>
+	</tr>
+	    <td align="left">2. Проверить статус ответа.</td>
 	<tr>
+	    <td align="left">3. Убедиться, что в теле ответа содержатся объекты объявлений.</td>
+	</tr>
     </tbody>
 </table>
