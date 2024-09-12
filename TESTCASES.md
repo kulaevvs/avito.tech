@@ -19,7 +19,6 @@
             <td rowspan=3 align="center">Работающий API, валидный "sellerId"</td>
             <td align="left">1. Отправить POST-запрос на эндпоинт '/item' с телом запроса в формате JSON:
 		    
-		    	```
       			{"name": "Nokia", 
 		    	"price": 12500, 
 		    	"sellerId": "test_seller_ID",
@@ -28,8 +27,7 @@
 		    		"like": 15, 
 		    		"viewCount": 17
 		    		}    
-		    	}
-       			```
+		    	} 
 </td>
 </tr>
         <tr>
