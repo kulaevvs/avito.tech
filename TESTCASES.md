@@ -101,12 +101,12 @@
 
 ```
 {
-"name": "Телефон",
+"name": "Nokia",
 "sellerId": "<SELLER_ID>",
 "statistics": {
-	"contacts": 32,
-	"like": 35,
-	"viewCount": 14
+	"contacts": 25,
+	"like": 15,
+	"viewCount": 17
        }
 }
 ```
@@ -117,7 +117,7 @@
 		    <li>В теле ответа содержится сообщение об ошибке валидации, указывающее на отсутствие поля 'price'.</li>
 	    	</ul>
 	    </td>
-	    <td rowspan=2 align="left">Сервер корректно возвращает статус 404 с соответствующим сообщением.</td>
+	    <td rowspan=2 align="left">Сервер возвращает 200 OK, что является некорректным поведением.</td>
 	    <td rowspan=2 align="center">FAILED</td>
 	</tr>
  	<tr>
