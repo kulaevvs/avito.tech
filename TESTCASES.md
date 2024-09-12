@@ -79,7 +79,9 @@
 	    <td rowspan=3 align="left">Запрос возвращает все объявления продавца корректно.</td>
 	    <td rowspan=3 align="center">Check</td>
 	</tr>
+ 	<tr>
 	    <td align="left">2. Проверить статус ответа.</td>
+	</tr>
 	<tr>
 	    <td align="left">3. Убедиться, что в теле ответа содержатся объекты объявлений.</td>
 	</tr>
@@ -110,6 +112,7 @@
 	    <td rowspan=2 align="center">Check</td>
 	</tr>
 	    <td align="left">2. Проверить статус ответа.</td>
+     
             <td rowspan=3 align="center">TC-005</td>
             <td rowspan=3 align="center">Получение объявления с  несуществующим ID (test_get_announce_error_id)</td>
             <td rowspan=3 align="center">Работающий API, ID товара несуществующий</td>
