@@ -49,12 +49,9 @@
         </tr>
         <tr>
             <td rowspan=3 align="center">TC-002</td>
-        </tr>
-        <tr>
             <td rowspan=3 align="center">Получение объявления по существующему ID (test_get_announce_by_id)</td>
-        </tr>
-        <tr>
             <td rowspan=3 align="center">Существует объявление с заданным ID</td>
+	    <td align="left">1. Отправить GET-запрос на "/item/ID" с корректным идентификатором.</td>
         </tr>
 
 
