@@ -30,8 +30,7 @@
  	}    
 } 
 ```
-</td>
- 
+</td> 
 <td rowspan=3 align="left">
 	        <ul type="disc">
 		    <li>Статус ответа: 200 OK</li>
@@ -52,12 +51,15 @@
             <td rowspan=3 align="center">Получение объявления по существующему ID (test_get_announce_by_id)</td>
             <td rowspan=3 align="center">Существует объявление с заданным ID</td>
 	    <td align="left">1. Отправить GET-запрос на "/item/ID" с корректным идентификатором.</td>
-        </tr>
+	    <td rowspan=3 align="left">
+	    	<ul type="disc">
+		    <li>Статус ответа: 200 OK</li>
+		    <li>В теле ответа содержится список объявлений данного продавца.</li>
+	    	</ul>
+	    </td>
+	</tr>
 	<tr>
-	    <ul type="disc">
-		<li>Статус ответа: 200 OK</li>
-		<li>В теле ответа содержится список объявлений данного продавца.</li>
-	    </ul>  	
+
 	</tr>
 	<tr>
             <td align="left">2. Проверить статус ответа.</td>
