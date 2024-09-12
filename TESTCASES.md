@@ -3,9 +3,13 @@
 <table>
     <thead>
         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
+            <th>Test Case ID</th>
+            <th>Описание тест-кейса</th>
+            <th>Тестовые данные</th>
+            <th>Шаги воспроизведения</th>
+            <th>Ожидаемый результат</th>
+            <th>Фактический результат</th>
+            <th>Статус прохождения</th>
         </tr>
     </thead>
     <tbody>
