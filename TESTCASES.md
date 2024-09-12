@@ -17,8 +17,8 @@
             <td rowspan=3 align="center">TC-001</td>
             <td rowspan=3 align="center">Создание объявления (test_post_announce)</td>
             <td rowspan=3 align="center">Работающий API, валидный "sellerId"</td>
-            <td align="left">1. Отправить POST-запрос на эндпоинт /n '/item' с телом запроса в формате JSON:
-		    
+            <td align="left">1. Отправить POST-запрос на эндпоинт "/item" с телом запроса в формате JSON:
+		    <code>
 	{"name": "Nokia",
 	 "price": 12500,
 	 "sellerId": "test_seller_ID",
@@ -28,7 +28,8 @@
 	 	"viewCount": 17
 	 	}    
 	}
- </td>
+		    </code>
+ 	     </td>
  
 <td align="left">
 	    <ul type="disc">
