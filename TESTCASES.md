@@ -20,15 +20,15 @@
             <td align="left">1. Отправить POST-запрос на эндпоинт "/item" с телом запроса в формате JSON:
 		
 ```
-	{"name": "Nokia",
-	 "price": 12500,
-	 "sellerId": "test_seller_ID",
-  		"statistics": {
-	 	"contacts": 25,
-	 	"like": 15, 
-	 	"viewCount": 17
-	 	}    
-	} 
+{"name": "Nokia",
+ "price": 12500,
+ "sellerId": "test_seller_ID",
+	"statistics": {
+ 	"contacts": 25,
+ 	"like": 15, 
+ 	"viewCount": 17
+ 	}    
+} 
 ```
 </td>
  
