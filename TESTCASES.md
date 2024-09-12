@@ -19,17 +19,19 @@
             <td rowspan=3 align="center">Работающий API, валидный "sellerId"</td>
             <td align="left">1. Отправить POST-запрос на эндпоинт '/item' с телом запроса в формате JSON:
 		    
-	{"name": "Nokia", 
-	 "price": 12500, 
+	{"name": "Nokia",
+	 "price": 12500,
 	 "sellerId": "test_seller_ID",
-	 "statistics": {
+  		"statistics": {
 	 	"contacts": 25,
 	 	"like": 15, 
 	 	"viewCount": 17
 	 	}    
 	} 
- </td>
-	</tr>
+</td>
+	<td align="left">2. Проверить статус ответа.</td>
+ 	<td align="left">3. Извлечь ID созданного объявления из ответа.</td>
+ 	</tr>
         <tr>
             <td align="center">R3 Text B</td>
         </tr>
