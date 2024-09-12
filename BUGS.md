@@ -25,25 +25,13 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3 align="center">TC-001</td>
-            <td rowspan=3 align="center">Создание объявления (test_post_announce)</td>
-            <td rowspan=3 align="center">Работающий API, валидный "sellerId"</td>
-            <td align="left">1. Отправить POST-запрос на эндпоинт "/item" с телом запроса в формате JSON:
-		
-```
-{
-"name": "Nokia",
- "price": 12500,
- "sellerId": "test_seller_ID",
-	"statistics": {
- 	"contacts": 25,
- 	"like": 15, 
- 	"viewCount": 17
- 	}    
-} 
-```
-</td> 
-<td rowspan=3 align="left">
+            <td rowspan=3 align="center">B-001</td>
+            <td rowspan=3 align="center">High</td>
+            <td rowspan=3 align="center">Блокирующий для дальнейшего тестирования получения объявления по ID</td>
+	    <td rowspan=3 align="center">test_api.py::test_post_announce</td>
+	    <td rowspan=3 align="center">Отсутствует поле 'id' в ответе на создание объявления</td>
+            <td align="left">1. Отправить POST-запрос на создание объявления по URL "https://qa-internship.avito.com/api/item".</td> 
+	    <td rowspan=3 align="left">
 	        <ul type="disc">
 		    <li>Статус ответа: 200 OK</li>
 		    <li>В теле ответа присутствует строка: "Сохранили объявление - ID", где ID это уникальный идентификатор объявления</li>
@@ -53,8 +41,22 @@
   	    <td rowspan=3 align="center">FAILED</td>
  	</tr>
         <tr>
-            <td align="left">2. Проверить статус ответа.</td>
-        </tr>
+            <td align="left">2. В теле запроса передать валидные данные в формате JSON:
+
+```
+{
+"name": "Nokia",
+"price": 12500,
+"sellerId": test_seller_ID,
+"statistics": {
+         "contacts": 25,
+         "like": 15,
+         "viewCount": 17
+	}
+}
+```
+</td> 
+</tr>
 	<tr>
             <td align="left">3. Извлечь ID созданного объявления из ответа.</td>
         </tr>
