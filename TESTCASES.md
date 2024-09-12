@@ -39,6 +39,7 @@
 	    </ul> 
 	</td>
  	<td align="left">Сервер возвращает статус `200`, в ответе присутствует сообщение с ID объявления.</td>
+  	<td align="center">Check</td>
  	</tr>
         <tr>
             <td align="left">2. Проверить статус ответа.</td>
@@ -47,7 +48,7 @@
             <td align="left">3. Извлечь ID созданного объявления из ответа.</td>
         </tr>
         <tr>
-            <td align="center">A</td>
+            <td rowspan=3 align="center">TC-001</td>
         </tr>
         <tr>
             <td align="center">R3 Text D</td>
