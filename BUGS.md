@@ -13,7 +13,7 @@
 <table>
     <thead>
         <tr>
-            <th style="width: 200px;>ID</th>
+            <th style="width: 20px;>ID</th>
             <th>Приоритет бага (high, medium, low)</th>
             <th>Серьёзность</th>
             <th>Скрипт/Модуль</th>
