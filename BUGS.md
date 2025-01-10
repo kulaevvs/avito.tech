@@ -12,7 +12,7 @@
 
 <table>
     <thead>
-        <tr style="width: 20px;>
+        <tr>
             <th>ID</th>
             <th>Приоритет бага (high, medium, low)</th>
             <th>Серьёзность</th>
